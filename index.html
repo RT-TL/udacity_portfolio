@@ -7,7 +7,7 @@
     <title>Portfolio Tobias Lange</title>
 
     <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/production.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,14 +19,19 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <span class="pull-right">Headline</span>
-            <br/>
-            <p>Subheadline</p>
+    <div class="row top-buffer">
+        <div class="col-xs-12 no-padding">
+            <img src="http://placehold.it/150x150" class="img-circle pull-left" alt="My Logo" height="auto"/>
+            <h1 class="pull-right">
+                Tobias Portfolio<br/>
+                <span class="small">My Projects in overview</span>
+            </h1>
+        </div>
+        <div class="row">
+            <hr style="height: 1px;"/><!-- TODO: add hairline -->
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-8">

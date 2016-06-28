@@ -33,7 +33,6 @@ All other dependencies are installed through nmp install
 
 ## Project Structure
 
-´|-- root
     |-- .gitignore
     |-- Gruntfile.js
     |-- index.html

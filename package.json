@@ -5,7 +5,8 @@
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "lazysizes": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {

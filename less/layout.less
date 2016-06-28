@@ -1,2 +1,16 @@
+/** EXPLANATION
+ *
+ * This is the master file of the portfolio layout.
+ * Bootstrap framework is imported first
+ * Other files are added on top and overwrite bootstrap
+ * All custom classes not overwriting bootstrap explicitly are located in custom.less
+ *
+**/
+
 @import "../node_modules/bootstrap/less/bootstrap.less";
+
+// Custom variables overriding bootstrap default
+@import "variables.less";
+
+// Custom style sheets
 @import "custom.less";

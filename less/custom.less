@@ -1,19 +1,97 @@
-// GENERAL PADDINGS AND SPACINGS
+/** CONTENTS
+ *
+ * CHAPTER 1: LAYOUT (Compotision)
+ * CHAPTER 2: TYPOGRAPHY
+ * CHAPTER 3: STYLE ELEMENTS
+*/
 
-// removing padding for headline
-.no-padding {
-  padding: 0 !important;
-}
+/** CHAPTER: LAYOUT **/
 
-// Add vertical gutter spacing
-[class*="col-"]{
-  margin-bottom: @grid-gutter-width;
-}
+/* Orientation */
 
-// Top buffer for certain elements
-.top-buffer {
-  margin-top: @grid-gutter-width;
-}
+  // Center element on small screens
+  .center-sm {
+    @media screen and (max-width: 768px) {
+      .text-center;
+    }
+  }
 
-/** IMAGES **/
-// Auto-size logo
+/* Spacing and margins */
+
+  // Remove all padding rules
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  // Add vertical gutter spacing
+  [class*="col-"]{
+    @media screen and (min-width: 769px) {
+      margin-bottom: @grid-gutter-width;
+    }
+  }
+
+  // Top buffer for certain elements
+  .top-buffer {
+    @media screen and (min-width: 768px) {
+      margin-top: @grid-gutter-width;
+    }
+  }
+
+  .featured {
+    margin-bottom: 2em;
+  }
+
+/** Positioning **/
+
+  // Vertically center a column
+  .vcenter {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+  }
+
+
+/** CHAPTER: TYPOGRAPHY **/
+
+/* Headlines */
+
+  h1 {
+    text-transform: uppercase;
+
+    // Font size for small screens
+    @media screen and (max-width: 768px) {
+      font-size: floor((@font-size-base * 2.3));
+    }
+
+    // Font size for bigger screens
+    @media screen and (min-width: 769px) {
+      font-size: floor((@font-size-base * 3));
+    }
+  }
+
+  h2 {
+    color: @brand-secondary;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: @brand-tertiary;
+  }
+
+/* Additional classes */
+
+  .small {
+    color: #000 !important;
+    font-size: floor((@font-size-base * 0.5));
+  }
+
+
+/** CHAPTER: STYLE ELEMENTS **/
+
+  // split line
+  hr {
+    border-width: 4px;
+    border-color: @brand-tertiary;
+    display: block;
+    margin: 0.5em auto 0.5em auto;
+  }

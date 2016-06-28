@@ -16,7 +16,6 @@
     <![endif]-->
 </head>
 <body>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -24,87 +23,111 @@
     <!-- Lazy Loading of images -->
     <script src="node_modules/lazysizes/lazysizes.min.js" async=""></script>
 
-    <div class="container">
-
-        <div class="row top-buffer">
-            <div class="col-xs-12 col-sm-4 col-lg-4 no-padding text-center vcenter">
-                <div>
-                    <img src="resources/img/profile.JPG" class="img-circle center-sm" alt="My Logo"/>
+    <header>
+        <div class="container">
+            <div class="row top-buffer">
+                <div class="col-xs-12 col-sm-4 col-lg-4 no-padding text-center vcenter">
+                    <div>
+                        <img src="resources/img/profile.JPG" class="img-circle center-sm" alt="My Logo"/>
+                    </div>
+                </div><!--
+                --><div class="col-xs-12 col-sm-8 col-lg-8 vcenter">
+                    <div>
+                        <h1 class="center-sm text-right">
+                            Tobias' Portfolio<br/>
+                            <span class="small hidden-xs">My Projects in overview</span>
+                        </h1>
+                    </div>
                 </div>
-            </div><!--
-            --><div class="col-xs-12 col-sm-8 col-lg-8 vcenter">
-                <div>
-                    <h1 class="center-sm text-right">
-                        Tobias' Portfolio<br/>
-                        <span class="small hidden-xs">My Projects in overview</span>
-                    </h1>
+            </div>
+
+            <!-- Split line -->
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <hr/>
                 </div>
             </div>
         </div>
+    </header>
 
-        <!-- Split line -->
-        <div class="row">
-            <div class="col-xs-12 ">
-                <hr/>
-            </div>
-        </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Main project teaser -->
+                <div class="col-xs-12 col-md-12 col-lg-8">
+                    <img
+                            alt="Main project illustration"
+                            src="resources/img/responsive/projects/cover-large.jpg"
+                            data-sizes="auto"
+                            data-src="resources/img/responsive/projects/cover-large.jpg"
+                            data-srcset="resources/img/responsive/projects/cover-small.jpg 400w, resources/img/responsive/projects/cover-medium.jpg 800w, resources/img/responsive/projects/cover-large.jpg 1000w, resources/img/responsive/projects/cover-xxl.jpg 2000w" class="lazyload img-responsive" />
 
-        <div class="row">
-            <!-- Main project teaser -->
-            <div class="col-xs-12 col-md-12 col-lg-8">
-                <img
-                        data-sizes="auto"
-                        data-src="resources/img/responsive/projects/cover-large.jpg"
-                        data-srcset="resources/img/responsive/projects/cover-small.jpg 400w, resources/img/responsive/projects/cover-medium.jpg 800w, resources/img/responsive/projects/cover-large.jpg 1000w, resources/img/responsive/projects/cover-xxl.jpg 2000w" class="lazyload img-responsive" />
+                    <!-- Main project teaser text for large screens -->
+                    <div class="hidden-xs hidden-md no-padding col-lg-12">
+                        <h2>Project 1 Subheadline</h2>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis, culpa
+                            deleniti harum impedit labore saepe tempora veniam! Amet, aperiam at consectetur cum, ea error
+                            ex illum ipsa ipsum quas quasi quo saepe, sunt. Aspernatur, blanditiis, consectetur id impedit
+                            iusto nemo neque pariatur praesentium quis similique sint sit velit, voluptatem.</p>
+                    </div>
 
-                <!-- Main project teaser text for large screens -->
-                <div class="hidden-xs hidden-md no-padding col-lg-12">
-                    <h2>Project 1 Subheadline</h2>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis, culpa
-                        deleniti harum impedit labore saepe tempora veniam! Amet, aperiam at consectetur cum, ea error
-                        ex illum ipsa ipsum quas quasi quo saepe, sunt. Aspernatur, blanditiis, consectetur id impedit
-                        iusto nemo neque pariatur praesentium quis similique sint sit velit, voluptatem.</p>
                 </div>
 
-            </div>
+                <!-- FEATURED PROJECTS -->
+                <section id="features">
 
-            <!-- SUB PROJECTS -->
-            <div class="col-xs-12 col-md-12 col-lg-4">
-                <h3>Featured Work</h3>
-            </div>
+                    <!-- Headline -->
+                    <div class="col-xs-12 col-md-12 col-lg-4">
+                        <h3>Featured Work</h3>
+                    </div>
 
-            <!-- First sub-project -->
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center featured">
-                <img
-                        data-sizes="auto"
-                        data-src="resources/img/responsive/projects/feature1-large.jpg"
-                        data-srcset="resources/img/responsive/projects/feature1-small.jpg 400w, resources/img/responsive/projects/feature1-medium.jpg 800w, resources/img/responsive/projects/feature1-large.jpg 1000w, resources/img/responsive/projects/feature1-xxl.jpg 2000w" class="lazyload img-responsive" />
-                <h2>Canoe in Sweden</h2>
-                <a href="http://www.sweden.se" target="_blank">http://www.sweden.se</a>
-            </div>
+                    <!-- First sub-project -->
+                    <article id="feature_1">
+                        <div class="col-xs-12 col-sm-6 col-md-4 text-center featured">
+                            <img
+                                    alt="Illustration of project feature 1"
+                                    src="resources/img/responsive/projects/feature1-large.jpg"
+                                    data-sizes="auto"
+                                    data-src="resources/img/responsive/projects/feature1-large.jpg"
+                                    data-srcset="resources/img/responsive/projects/feature1-small.jpg 400w, resources/img/responsive/projects/feature1-medium.jpg 800w, resources/img/responsive/projects/feature1-large.jpg 1000w, resources/img/responsive/projects/feature1-xxl.jpg 2000w" class="lazyload img-responsive" />
+                            <h2>Canoe in Sweden</h2>
+                            <a href="http://www.sweden.se" target="_blank">http://www.sweden.se</a>
+                        </div>
+                    </article>
 
-            <!-- Second sub-project -->
-            <div class="col-xs-12 col-sm-6 col-md-4 text-center featured">
-                <img
-                        data-sizes="auto"
-                        data-src="resources/img/responsive/projects/feature1-large.jpg"
-                        data-srcset="resources/img/responsive/projects/feature2-small.jpg 400w, resources/img/responsive/projects/feature2-medium.jpg 800w, resources/img/responsive/projects/feature2-large.jpg 1000w, resources/img/responsive/projects/feature2-xxl.jpg 2000w" class="lazyload img-responsive" />
-                <h2>Dance in the rain</h2>
-                <a href="http://www.rain.de" target="_blank">http://www.rain.de</a>
-            </div>
+                    <!-- Second sub-project -->
+                    <article id="feature_2">
+                        <div class="col-xs-12 col-sm-6 col-md-4 text-center featured">
+                            <img
+                                    alt="Illustration of project feature 2"
+                                    src="resources/img/responsive/projects/feature2-large.jpg"
+                                    data-sizes="auto"
+                                    data-src="resources/img/responsive/projects/feature1-large.jpg"
+                                    data-srcset="resources/img/responsive/projects/feature2-small.jpg 400w, resources/img/responsive/projects/feature2-medium.jpg 800w, resources/img/responsive/projects/feature2-large.jpg 1000w, resources/img/responsive/projects/feature2-xxl.jpg 2000w" class="lazyload img-responsive" />
+                            <h2>Dance in the rain</h2>
+                            <a href="http://www.rain.de" target="_blank">http://www.rain.de</a>
+                        </div>
+                    </article>
 
-            <!-- Third sub-project -->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-8 text-center featured">
-                <img
-                        data-sizes="auto"
-                        data-src="resources/img/responsive/projects/feature1-large.jpg"
-                        data-srcset="resources/img/responsive/projects/feature3-small.jpg 400w, resources/img/responsive/projects/feature3-medium.jpg 800w, resources/img/responsive/projects/feature3-large.jpg 1000w, resources/img/responsive/projects/feature3-xxl.jpg 2000w" class="lazyload img-responsive" />
-                <h2>Lime time</h2>
-                <a href="http://www.bbcgoodfood.com/glossary/lime" target="_blank">http://www.bbcgoodfood.com/glossary/lime</a>
+                    <!-- Third sub-project -->
+                    <article id="feature_3">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-offset-8 text-center featured">
+                            <img
+                                    alt="Illustration of project feature 3"
+                                    src="resources/img/responsive/projects/feature3-large.jpg"
+                                    data-sizes="auto"
+                                    data-src="resources/img/responsive/projects/feature1-large.jpg"
+                                    data-srcset="resources/img/responsive/projects/feature3-small.jpg 400w, resources/img/responsive/projects/feature3-medium.jpg 800w, resources/img/responsive/projects/feature3-large.jpg 1000w, resources/img/responsive/projects/feature3-xxl.jpg 2000w" class="lazyload img-responsive" />
+                            <h2>Lime time</h2>
+                            <a href="http://www.bbcgoodfood.com/glossary/lime" target="_blank">http://www.bbcgoodfood.com/glossary/lime</a>
+                        </div>
+                    </article>
+                </section>
+                <!-- End of Feature section -->
+
             </div>
         </div>
-
-    </div>
+    </main>
 
 </body>
 </html>

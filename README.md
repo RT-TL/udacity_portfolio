@@ -13,6 +13,11 @@ This portfolio is build on twitter bootstrap frontend framework. It runs solely 
 
 ## Quick start
 
+Clone repository:
+```
+git clone https://github.com/Roomtailors/udacity_portfolio.git
+```
+
 To begin install dependencies by running from root:
 
 ```
@@ -22,16 +27,27 @@ npm-install
 ## Requirements
 
 1. Clone git repository with 
-
-```
-git clone https://github.com/Roomtailors/udacity_portfolio.git
-```
-
-2. node-js and npm for depency installation
+2. Node-js and npm for dependecy installation
 
 All other dependencies are installed through nmp install
 
 ## Project Structure
+
+|-- undefined
+    |-- .gitignore
+    |-- Gruntfile.js
+    |-- index.html
+    |-- package.json
+    |-- README.md
+    |-- img-source // save your images here
+    |-- less // edit these to create new style sheets
+    |   |-- custom.less
+    |   |-- layout.less
+    |   |-- variables.less
+    |-- resources // production only
+        |-- css
+        |-- img
+        |-- js
 
 ## Frontend Development
 

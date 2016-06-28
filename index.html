@@ -9,33 +9,21 @@
     <!-- Bootstrap -->
     <link href="resources/css/production.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Lazy Loading of images -->
-    <script src="node_modules/lazysizes/lazysizes.min.js" async=""></script>
-
     <header>
         <div class="container">
             <div class="row top-buffer">
                 <div class="col-xs-12 col-sm-4 col-lg-4 no-padding text-center vcenter">
-                    <div>
+                    <div id="logo-container">
                         <img src="resources/img/profile.JPG" class="img-circle center-sm" alt="My Logo"/>
                     </div>
                 </div><!--
                 --><div class="col-xs-12 col-sm-8 col-lg-8 vcenter">
-                    <div>
+                    <div id="title-container">
                         <h1 class="center-sm text-right">
                             Tobias' Portfolio<br/>
-                            <span class="small hidden-xs">My Projects in overview</span>
+                            <span class="small">My Projects in overview</span>
                         </h1>
                     </div>
                 </div>
@@ -63,7 +51,7 @@
                             data-srcset="resources/img/responsive/projects/cover-small.jpg 400w, resources/img/responsive/projects/cover-medium.jpg 800w, resources/img/responsive/projects/cover-large.jpg 1000w, resources/img/responsive/projects/cover-xxl.jpg 2000w" class="lazyload img-responsive" />
 
                     <!-- Main project teaser text for large screens -->
-                    <div class="hidden-xs hidden-md no-padding col-lg-12">
+                    <div class="no-padding col-lg-12">
                         <h2>Project 1 Subheadline</h2>
                         <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis, culpa
                             deleniti harum impedit labore saepe tempora veniam! Amet, aperiam at consectetur cum, ea error
@@ -122,12 +110,26 @@
                             <a href="http://www.bbcgoodfood.com/glossary/lime" target="_blank">http://www.bbcgoodfood.com/glossary/lime</a>
                         </div>
                     </article>
+
                 </section>
                 <!-- End of Feature section -->
 
             </div>
         </div>
     </main>
+
+    <!-- Java Script Block -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Lazy Loading of images -->
+    <script src="node_modules/lazysizes/lazysizes.min.js" async=""></script>
 
 </body>
 </html>
